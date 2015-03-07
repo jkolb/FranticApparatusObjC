@@ -1,0 +1,14 @@
+PODS:
+  - FranticApparatusObjC (0.1.0)
+
+DEPENDENCIES:
+  - FranticApparatusObjC (from `../`)
+
+EXTERNAL SOURCES:
+  FranticApparatusObjC:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FranticApparatusObjC: cd9465c5d6dbbf0159974042fc4298d376735831
+
+COCOAPODS: 0.35.0

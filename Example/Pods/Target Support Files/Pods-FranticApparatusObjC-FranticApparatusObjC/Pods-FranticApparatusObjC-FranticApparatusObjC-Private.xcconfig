@@ -1,0 +1,5 @@
+#include "Pods-FranticApparatusObjC-FranticApparatusObjC.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/FranticApparatusObjC" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FranticApparatusObjC"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
