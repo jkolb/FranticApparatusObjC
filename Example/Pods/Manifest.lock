@@ -1,5 +1,5 @@
 PODS:
-  - FranticApparatusObjC (0.1.0)
+  - FranticApparatusObjC (1.0.0)
 
 DEPENDENCIES:
   - FranticApparatusObjC (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FranticApparatusObjC: cd9465c5d6dbbf0159974042fc4298d376735831
+  FranticApparatusObjC: a537d078d043861a64e595a817260381f7152d1e
 
 COCOAPODS: 0.35.0
