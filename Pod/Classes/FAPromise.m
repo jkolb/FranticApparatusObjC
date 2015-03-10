@@ -110,13 +110,13 @@ typedef void (^FAResolveBlock)(id);
                     if (strongSelf != nil) {
                         [strongSelf transition:value];
                     }
-                    return result;
+                    return value;
                 } onRejected:^id(NSError *reason) {
                     FAStrongSelf;
                     if (strongSelf != nil) {
                         [strongSelf transition:reason];
                     }
-                    return result;
+                    return reason;
                 }];
             } else if ([result isKindOfClass:[NSError class]]) {
                 self.state = FAPromiseStateRejected;
