@@ -5,6 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/FranticApparatusObjC.svg?style=flat)](http://cocoadocs.org/docsets/FranticApparatusObjC)
 [![Platform](https://img.shields.io/cocoapods/p/FranticApparatusObjC.svg?style=flat)](http://cocoadocs.org/docsets/FranticApparatusObjC)
 
+
+## Important
+
+Found a bug in 1.0.0 that causes an infinite loop. Please upgrade to 1.0.1 as soon as possible.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
