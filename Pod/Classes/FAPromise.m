@@ -43,7 +43,7 @@ typedef void (^FAResolveBlock)(id);
 @property (nonatomic, readonly, strong) id<FADispatchQueue> synchronizationQueue;
 @property (nonatomic) FAPromiseState state;
 @property (nonatomic, strong) id result;
-@property (nonatomic, readonly, strong) FAPromise *parent;
+@property (nonatomic, strong) FAPromise *parent;
 @property (nonatomic, strong) NSMutableArray *onFulfilled;
 @property (nonatomic, strong) NSMutableArray *onRejected;
 
@@ -124,16 +124,18 @@ typedef void (^FAResolveBlock)(id);
                 for (FARejectBlock rejected in self.onRejected) {
                     rejected(result);
                 }
-                [self.onFulfilled removeAllObjects];
-                [self.onRejected removeAllObjects];
+                self.onFulfilled = nil;
+                self.onRejected = nil;
+                self.parent = nil;
             } else {
                 self.state = FAPromiseStateFulfilled;
                 self.result = result;
                 for (FAFulfillBlock fulfilled in self.onFulfilled) {
                     fulfilled(result);
                 }
-                [self.onFulfilled removeAllObjects];
-                [self.onRejected removeAllObjects];
+                self.onFulfilled = nil;
+                self.onRejected = nil;
+                self.parent = nil;
             }
             break;
             
